@@ -48,7 +48,7 @@ resource "azurerm_subnet" "dev" {
   address_prefix       = "10.0.2.0/24"
 }
 
-/* resource "azurerm_virtual_network_gateway" "vpnGateway" {
+resource "azurerm_virtual_network_gateway" "vpnGateway" {
     name                = "vpnGateway"
     location            = "${azurerm_resource_group.core.location}"
     resource_group_name = "${azurerm_resource_group.core.name}"
@@ -67,4 +67,4 @@ resource "azurerm_subnet" "dev" {
         subnet_id                       = "${azurerm_subnet.GatewaySubnet.id}"
     }
 
-}*/
+}
