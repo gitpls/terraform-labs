@@ -35,14 +35,14 @@ resource "azurerm_subnet" "GatewaySubnet" {
 }
 
 resource "azurerm_subnet" "training" {
-  name                 = "${var.resource_prefix}TFSubnet"
+  name                 = "${var.resource_prefix}training"
   resource_group_name  = "${azurerm_resource_group.core.name}"
   virtual_network_name = "${azurerm_virtual_network.core.name}"
   address_prefix       = "10.0.1.0/24"
 }
 
 resource "azurerm_subnet" "dev" {
-  name                 = "${var.resource_prefix}TFSubnet"
+  name                 = "${var.resource_prefix}dev"
   resource_group_name  = "${azurerm_resource_group.core.name}"
   virtual_network_name = "${azurerm_virtual_network.core.name}"
   address_prefix       = "10.0.2.0/24"
