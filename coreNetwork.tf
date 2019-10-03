@@ -62,7 +62,7 @@ resource "azurerm_virtual_network_gateway" "vpnGateway" {
 
     ip_configuration {
         name                            = "vpnGwConfig"
-        public_ip_address_id            = "${azurerm_public_ip.vpnGatewayPublicIp.id}"
+        public_ip_address_id            = "${azurerm_public_ip.vpnGatewayPublic.id}"
         private_ip_address_allocation   = "Dynamic"
         subnet_id                       = "${azurerm_subnet.GatewaySubnet.id}"
     }
