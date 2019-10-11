@@ -14,3 +14,10 @@ variable "resource_prefix" {
   default = "tf"
   
 }
+
+
+variable "webapplocs" {
+    description = "List of locations for web apps"
+    type        = "list"
+    default     = []
+}
