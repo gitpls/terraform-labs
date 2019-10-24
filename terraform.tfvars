@@ -1,4 +1,4 @@
-loc  = "China East"
+loc  = "West Europe"
 
 tags = {
     source = "citadel"
@@ -6,6 +6,6 @@ tags = {
     }
 
 webapplocs = [ 
-    "chinaeast",
-    "chinanorth",
+    "westeurope",
+    "northeurope",
     ]
